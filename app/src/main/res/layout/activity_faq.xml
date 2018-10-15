@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- This is used for the list in the FAQ-->
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/list_view"
-    android:orientation="vertical"
-    android:drawSelectorOnTop="true"
-    tools:context="com.example.nikhilreddy.ass.FaqActivity">
+    tools:context=".MainActivity">
 
-</ListView>
+    <ExpandableListView
+        android:id="@+id/expListViewfaq"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layoutDirection="ltr"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp" />
+
+</RelativeLayout>

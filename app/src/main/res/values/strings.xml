@@ -80,7 +80,6 @@
     <string name="t27_0">Hooks</string>
 
 
-
     <string name="m0_0">Autosar is a software standard of implementing one or many functionalities in a system. This is specially designed for Automotive applications. This pursues the objective of creating and establishing an open and standardized software architecture for Automotive Electronic Control Units.
 AUTOSAR (Automotive Open System Architecture) is an open and standardized automotive software architecture, jointly developed by automobile manufacturers, suppliers and tool developers.
 The AUTOSAR standard consists of a set of specifications that describe a software architecture, application interfaces and a methodology.</string>
@@ -752,8 +751,6 @@ Different Hooks provided by the AUTOSAR-OS are\n
 •	ErrorHook: The application specific error hook is called whenever a Task or Category 2 ISR which belongs to the OS-Application causes an error.\n
 
 </string>
-
-
 
 
 </resources>

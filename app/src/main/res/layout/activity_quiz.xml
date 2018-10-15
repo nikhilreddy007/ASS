@@ -3,10 +3,12 @@
 <!-- This is used for the list in the Quiz-->
 <ListView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quizList"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:drawSelectorOnTop="true"
     tools:context="com.example.nikhilreddy.ass.EasyQuizActivity">
+
 
 </ListView>

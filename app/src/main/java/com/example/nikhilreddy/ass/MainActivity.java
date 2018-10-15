@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         final LinearLayout hardquizlayout = (LinearLayout) findViewById(R.id.hardquizlayout);
 
         final Intent beginnertut_intent = new Intent(this, BeginnerTutorialActivity.class);
-
         final Intent easyquiz_intent = new Intent(this, EasyQuizActivity.class);
         final Intent mediumquiz_intent = new Intent(this, MediumQuizActivity.class);
         final Intent hardquiz_intent = new Intent(this, HardQuizActivity.class);
@@ -79,15 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        faqcard.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                tutoriallayout.setVisibility(View.VISIBLE);
-                //tutorialoptionslayout.setVisibility(View.GONE);
-                quizlayout.setVisibility(View.VISIBLE);
-                quizoptionslayout.setVisibility(View.GONE);
 
-            }
-        });
         quizcard.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 if(quizlayout.getVisibility() == View.VISIBLE) {
