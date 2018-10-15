@@ -14,14 +14,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * it is used to get the data for each item in the listview
- */
-public class ChapterAdapter extends ArrayAdapter<Item>{
-
+public class ArticleAdapter extends ArrayAdapter<Link> {
     private int colorId;
 
-    public ChapterAdapter(Context context, ArrayList<Item> arrayList, int colorId){
+    public ArticleAdapter(Context context, ArrayList<Link> arrayList, int colorId){
         super(context,0,arrayList);
         this.colorId = colorId;
     }
@@ -35,17 +31,17 @@ public class ChapterAdapter extends ArrayAdapter<Item>{
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_view,parent,false);
         }
 
-        Item currentItem = getItem(position);
+        Link currentLink = getItem(position);
 
         TextView numberView = (TextView) listItemView.findViewById(R.id.number_text);
-        numberView.setText(String.valueOf(currentItem.getNumber()));
+        numberView.setText(String.valueOf(currentLink.getNumber()));
 
         GradientDrawable magnitudeCircle = (GradientDrawable) numberView.getBackground();
-        int magnitudeColor = getMagnitudeColor(currentItem.getNumber());
+        int magnitudeColor = getMagnitudeColor(currentLink.getNumber());
         magnitudeCircle.setColor(magnitudeColor);
 
         TextView chapterView = (TextView) listItemView.findViewById(R.id.chapter_text);
-        chapterView.setText(currentItem.getChapter());
+        chapterView.setText(currentLink.getChapter());
 
         LinearLayout linearLayout = (LinearLayout)listItemView.findViewById(R.id.list_for_item);
         int color = ContextCompat.getColor(getContext(),colorId);

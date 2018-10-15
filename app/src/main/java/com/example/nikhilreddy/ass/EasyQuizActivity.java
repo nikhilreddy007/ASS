@@ -6,6 +6,9 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+/**
+ * It is used for Easy Quiz
+ */
 public class EasyQuizActivity extends AppCompatActivity {
 
     @Override

@@ -13,16 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- The splash screen of the app -->
+        <!-- The Intro screen of the app -->
         <activity
             android:name=".WelcomeActivity"
-            android:theme="@style/IntroTheme" />
+            android:theme="@style/IntroTheme"/>
 
         <!-- The home page of the app -->
         <activity
             android:name=".MainActivity"
             android:label="ASLA"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
 
         <!-- Parts of Tutorials -->
         <activity
@@ -61,10 +62,14 @@
             android:name=".ContactActivity"
             android:label="Contact"
             android:parentActivityName=".MainActivity" />
+
+        <!-- For showing why ZF -->
         <activity
             android:name=".ZFActivity"
             android:label="Why ZF"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"/>
+
+        <!-- For showing why AUTOSAR -->
         <activity
             android:name=".AutosarActivity"
             android:label="Why AUTOSAR"
@@ -82,6 +87,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".questionsActivity"></activity>
     </application>
 

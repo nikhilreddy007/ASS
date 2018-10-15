@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is used for Why AUTOSAR layout option in menu -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,8 +12,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:text="Why AUTOSAR"
+        android:gravity="center_horizontal"
         android:textStyle="bold"
         android:textSize="30dp"
         android:padding="10sp"
@@ -19,7 +21,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:text="Autosar has paved automotive companies to focus more on implementation by maintaining a common standard at all the levels. The fundamental concept of autosar is to separate application and infrastructure to achieve the goals
 The goals of the standard in view are,
 Scalability to different vehicle and platform variants.\n\n
@@ -33,7 +34,7 @@ Modularity: Enables tailoring of software according to the individual requiremen
 "
         android:textColor="#000000"
         android:textStyle="bold"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:padding="10dp"/>
 
 </LinearLayout>

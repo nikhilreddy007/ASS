@@ -18,6 +18,9 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
+/**
+ * It is used for FAQ activity
+ */
 public class FaqActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
     ExpandableListView expandableListView;

@@ -1,16 +1,14 @@
 package com.example.nikhilreddy.ass;
 
-/**
- * this is used for getting data in each list item
- */
-public class Item {
-
+public class Link {
     private int number;
     private String chapter;
+    private String link;
 
-    public Item(int number, String chapter){
+    public Link(int number, String chapter, String link){
         this.number = number;
         this.chapter = chapter;
+        this.link = link;
     }
 
     public String getChapter() {
@@ -19,5 +17,9 @@ public class Item {
 
     public int getNumber() {
         return number;
+    }
+
+    public String getLink() {
+        return link;
     }
 }

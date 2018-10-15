@@ -18,7 +18,9 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-
+/**
+ * It is used for tutorials
+ */
 public class BeginnerTutorialActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
     ExpandableListView expandableListView;

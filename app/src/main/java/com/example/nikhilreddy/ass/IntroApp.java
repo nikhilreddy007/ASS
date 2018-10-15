@@ -3,7 +3,7 @@ package com.example.nikhilreddy.ass;
 import android.app.Application;
 
 /**
- * Created by Nikhil Reddy on 7/20/2018.
+ * It is used for Intro screen of the app
  */
 
 public class IntroApp extends Application {
